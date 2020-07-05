@@ -1,38 +1,452 @@
-.App {
+
+.header{
+  background-color: black;
+  flex-direction: row;
+  padding: 10px 0px 0px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-container{
+  background-color: #000000;
+  display: flex;
+  padding-right: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+}
+
+.headertextcontainer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headertext{
+  font-family: 'Montserrat', sans-serif;
+    color: white;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.icon{
+  height: auto;
+  width: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.biotext{
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
   }
+
+.work-container{
+  background-color:white;
+  margin:0px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.titlecontainer{
+  color:white;
+  text-align: center;
   display: flex;
+  padding: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title{
+  color:black;
+  text-align: center;
+  padding: 0px 20px;
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;  border-radius: 3px;
+  background-color: white;
+}
+
+
+.underline{
+  height: 3px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.projectcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-title{
+   font-size: 25px;
+   font-family: 'Montserrat', sans-serif;}
+
+.project-subtitle{
+  font-size: 15px;
+  color: grey;
+  font-family: 'Montserrat', sans-serif;}
+
+.project-description{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+.project-image{
+  width: 250px;
+  height: 250px;
+}
+
+.projectcard{
+  display: flex;
+  padding: 20px;
+  width: '100%';
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.prjct-btn-container{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-bar{
+    position: fixed;
+    display: flex;
+    margin-top: 10px;
+    align-self: flex-end;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+
+.nav-bar-list{
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;    padding: 20px;
+}
+
+a:link, a:visited {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: grey;
+}
+
+
+.skills-list{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-list-text{
+  font-size: 25px;
+  width: 250px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;  text-align: start;
+}
+
+.skill-sub{
+  text-align: left;
+  font-size: 25px;
+  padding: 10px 30px;
+  width: 250px;
+  font-family: 'Montserrat', sans-serif;  font-weight: bold;
+}
+
+
+.vw100{
+    height: 100vh;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  margin: 40px 40px;
+}
+
+.myfont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.myicon{
+   color: white;
+   margin: 10px;
+}
+
+
+.storebtn{
+  border: solid 2px #de5246;
+  color: #de5246;
+}
+
+.storebtn:hover{
+  color: white;
+  background-color: #de5246;
+}
+
+
+.carousel-ani{
+   animation-name: fade;
+   animation-duration: 2s;
+   opacity: 1;
+   animation-timing-function: ease-in;
+}
+
+
+@keyframes fade{
+  0% {opacity: 0.5;}
+  50% {opacity: 0.7;}
+  100% {opacity: 1;}
+}
+
+
+.prev-next-hover{
+  cursor: pointer;
+}
+
+
+
+.typewriter{
+  overflow: hidden; 
+  border-right: .15em solid transparent; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  width: 280px;
+  padding: 0px;
+  display: inline-block;
+  letter-spacing: .15em;
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret .75s step-end 10;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 280px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: white }
+  50% { border-color: transparent; }
+}
+
+.zoom{
+   transition: transform .2s;
+}
+
+.zoom:hover{
+   transform: scale(1.05);
+}
+
+.carousel-indicators .active{
+  background-color: #f00;
+}
+
+
+.no-move{
+  opacity: 0;
+}
+
+
+.move-right{
+   transform: translateX(0px);
+   transition: ease-out;
+   opacity: 1;
+   animation: slideright 2s reverse;
+}
+
+.move-left{
+  transform: translateX(0px);
+  transition: ease-out;
+  opacity: 1;
+  animation: slideleft 2s reverse;
+}
+
+
+@keyframes slideright{
+  0% {transform: translateX(0px);
+     opacity: 1;
+     
+  }
+  100% {transform:translateX(-50px);
+        opacity: 0;
+  }
+}
+
+
+@keyframes slideleft{
+  0% {transform: translateX(0px);
+     opacity: 1;
+     
+  }
+  100% {transform:translateX(50px);
+        opacity: 0;
+  }
+}
+
+
+.sub-title{
+  background-color: #ffffff;
+  padding:5px 15px;
+  box-shadow: inset 
+    2px 2px 6px 0 rgba(0, 0, 0, 0.25),
+    -2px -2px 6px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+
+.letter1{
+  animation: colorswitch1  alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.letter2{
+  animation: colorswitch2 alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.letter3{
+  animation: colorswitch3  alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.letter4{
+  animation: colorswitch4  alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.letter5{
+  animation: colorswitch5 alternate;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.letter6{
+  animation: colorswitch6 alternate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes colorswitch1{
+  0%{color: transparent;}
+  10%{color:  black;}
+  100%{color: black;}
+}
+
+@keyframes colorswitch2{
+  0%{color: transparent;}
+  20%{color:black}
+  100%{color: black;}
+}
+
+@keyframes colorswitch3{
+  0%{color: transparent;}
+  30%{color:black}
+  100%{color: black;}
+}
+
+@keyframes colorswitch4{
+  0%{color: transparent;}
+  40%{color:black}
+  100%{color: black;}
+
+}@keyframes colorswitch5{
+  0%{color: transparent;}
+  50%{color:black;}
+  100%{color: black;}
+
+}@keyframes colorswitch6{
+  0%{color: transparent;}
+  60%{color:black;}
+  100%{color: black;}
+}
+
+
+.danceanim{
+  animation: dancenow 1s ease-in-out 5 alternate;
+}
+
+
+@keyframes dancenow{
+  0%{transform: rotateX(0deg);}
+  100%{transform: rotateX(40deg);}
+}
+
+
+.rotate-border{
+ animation: rotate 3s ease-in-out  infinite alternate;
+}
+
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}
+}
+
+
+.mobileWork{
+  animation: zoom 2s ease;
+}
+
+
+@keyframes zoom{
+  0%{transform: scale(0,0);}
+  100%{transform: scale(1,1);
+  }
+}
+
+.githubbtn{
+  border:   2px solid #333;
+}
+
+
+.githubbtn:hover{
+  background-color: #333;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skillsbg{
+  background-image: url("./Assets/Images/laptop.jpg");
+  padding: 30px 0px 30px;
+  width: auto;
+  overflow:hidden;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
