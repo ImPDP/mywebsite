@@ -127,9 +127,13 @@ const Works=()=>{
             <div style={{padding:10}} className='p-5 d-flex flex-column align-items-center text-center justify-content-center myfont'>   
                  <span style={{color:'black'}}>I have not done any real world projects yet. Waiting to start/join a new project eagerly. This site was built with <a rel="noopener noreferrer" style={{color:'#00d8ff'}} href='https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='_blank'>React</a> as my learning project.
                  </span>
-                 <span className='githubbtn btn m-5'>
+                     <a href='https://github.com/ImPDP/mywebsite' target='_blank' rel="noopener noreferrer">
+                     <span className='githubbtn btn m-5'>
+
                      <i className='fa fa-github mr-2'></i>
-                      VIEW SOURCE CODE</span>
+                      VIEW SOURCE CODE
+                      </span>
+                     </a>
             </div>  
 
 
@@ -156,15 +160,15 @@ const Works=()=>{
 
                 <div  className='row  justify-content-center'>
                 <div style={{padding:10}} className=' col-md-4 text-center' > 
-                    <img alt='projectimage1' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/aklogo.png')}/>
+                    <img alt='projectimage1' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/aklogo.jpg')}/>
                 </div>
 
                 <div style={{padding:10}} className='col-md-4 text-center' > 
-                    <img alt='projectimage2' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/akdel.png')}/>
+                    <img alt='projectimage2' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/akdel.jpg')}/>
                 </div>
 
                 <div style={{padding:10}} className='col-md-4 text-center' > 
-                    <img alt='projectimage3' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/akbus.png')}/>
+                    <img alt='projectimage3' className={'project-image ' + mobileclass1} src ={require('../Assets/Images/akbus.jpg')}/>
                 </div>
                 </div>
                 <div>

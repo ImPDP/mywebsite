@@ -90,8 +90,11 @@ const ProjectMobile=()=>{
                  <span style={{color:'black'}}>I have not done any real world projects. Waiting to start/join a new project eagerly. This site was built with <a style={{color:'#00d8ff'}} rel="noopener noreferrer" href='https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='_blank'>React</a> as 
                  my learning projects.
                  </span>
-                 <span style={{backgroundColor:'#333'}} className='btn text-light mt-5'>
-                      VIEW SOURCE CODE</span>
+                 <a href='https://github.com/ImPDP/mywebsite' target='_blank' rel="noopener noreferrer">
+                     <span className='githubbtn btn m-5'>
+                      VIEW CODE
+                      </span>
+                     </a>
             </div> 
        </div>
    )

@@ -23,7 +23,7 @@ const Profile=()=>{
                         objectFit:'cover'}} 
                       className='rounded-circle  mx-auto d-block' 
                       alt='Pradeep Annadurai'
-                      src={require('../Assets/Images/myphoto.png')}/>
+                      src={require('../Assets/Images/myphoto.jpg')}/>
                 </div>
             
 
